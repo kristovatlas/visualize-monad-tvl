@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Morpho",
+    "slug": "morpho",
+    "chains": ["Ethereum", "Base", "Monad"],
+    "chainTvls": {"Monad": 98750000, "Ethereum": 500000000, "Base": 200000000},
+    "change_1h": -0.5,
+    "change_1d": 2.3,
+    "change_7d": 5.1
+  },
+  {
+    "name": "Steakhouse Financial",
+    "slug": "steakhouse-financial",
+    "chains": ["Monad"],
+    "chainTvls": {"Monad": 47280000},
+    "change_1h": 0.1,
+    "change_1d": -1.2,
+    "change_7d": 3.4
+  },
+  {
+    "name": "Curve DEX",
+    "slug": "curve-dex",
+    "chains": ["Ethereum", "Polygon", "Monad"],
+    "chainTvls": {"Monad": 20660000, "Ethereum": 3000000000},
+    "change_1h": 0.0,
+    "change_1d": -0.8,
+    "change_7d": 1.5
+  },
+  {
+    "name": "Uniswap V3",
+    "slug": "uniswap-v3",
+    "chains": ["Ethereum", "Monad", "Arbitrum"],
+    "chainTvls": {"Monad": 2090000, "Ethereum": 4000000000},
+    "change_1h": 0.3,
+    "change_1d": 0.5,
+    "change_7d": -2.1
+  },
+  {
+    "name": "Tiny Protocol",
+    "slug": "tiny-protocol",
+    "chains": ["Monad"],
+    "chainTvls": {"Monad": 500000},
+    "change_1h": 0.0,
+    "change_1d": 0.0,
+    "change_7d": 0.0
+  },
+  {
+    "name": "Ethereum Only",
+    "slug": "eth-only",
+    "chains": ["Ethereum"],
+    "chainTvls": {"Ethereum": 1000000000},
+    "change_1h": 0.0,
+    "change_1d": 0.0,
+    "change_7d": 0.0
+  }
+]

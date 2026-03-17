@@ -1,0 +1,29 @@
+{
+  "name": "visualize-monad-tvl",
+  "version": "0.1.0",
+  "description": "Monad blockchain TVL monitor for detecting large sudden swings",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "browserify src/index.js -o public/bundle.js",
+    "build:lavamoat": "lavamoat-browserify src/index.js -o public/bundle.js --policy lavamoat/policy.json --policyOverride lavamoat/policy-override.json",
+    "build:policy": "lavamoat-browserify src/index.js --autopolicy --policy lavamoat/policy.json",
+    "dev": "browserify src/index.js -o public/bundle.js --debug && echo 'Build complete. Serve public/ directory.'",
+    "copy-assets": "cp node_modules/uplot/dist/uPlot.iife.min.js public/uPlot.iife.min.js && cp node_modules/uplot/dist/uPlot.min.css public/uPlot.min.css",
+    "postinstall": "npx --yes @lavamoat/allow-scripts auto",
+    "test": "node --test test/api/*.test.js test/model/*.test.js test/chart/*.test.js test/security/*.test.js",
+    "test:integration": "INTEGRATION=1 node --test test/integration/*.test.js",
+    "test:security": "node --test test/security/*.test.js"
+  },
+  "devDependencies": {
+    "uplot": "^1.6.31",
+    "browserify": "^17.0.1",
+    "lavamoat-browserify": "^15.0.0",
+    "@lavamoat/allow-scripts": "^3.0.0"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "$root$": false
+    }
+  }
+}

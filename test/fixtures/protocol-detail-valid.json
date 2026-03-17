@@ -1,0 +1,30 @@
+{
+  "name": "Morpho",
+  "slug": "morpho",
+  "chainTvls": {
+    "Monad": {
+      "tvl": [
+        {"date":1740787200,"totalLiquidityUSD":90000000},
+        {"date":1740873600,"totalLiquidityUSD":91000000},
+        {"date":1740960000,"totalLiquidityUSD":92500000},
+        {"date":1741046400,"totalLiquidityUSD":91800000},
+        {"date":1741132800,"totalLiquidityUSD":93000000},
+        {"date":1741219200,"totalLiquidityUSD":94500000},
+        {"date":1741305600,"totalLiquidityUSD":95000000},
+        {"date":1741392000,"totalLiquidityUSD":94200000},
+        {"date":1741478400,"totalLiquidityUSD":96000000},
+        {"date":1741564800,"totalLiquidityUSD":97500000},
+        {"date":1741651200,"totalLiquidityUSD":96800000},
+        {"date":1741737600,"totalLiquidityUSD":97000000},
+        {"date":1741824000,"totalLiquidityUSD":98000000},
+        {"date":1741910400,"totalLiquidityUSD":98500000},
+        {"date":1741996800,"totalLiquidityUSD":98750000}
+      ]
+    },
+    "Ethereum": {
+      "tvl": [
+        {"date":1740787200,"totalLiquidityUSD":500000000}
+      ]
+    }
+  }
+}

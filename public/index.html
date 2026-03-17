@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://api.llama.fi; style-src 'self'; script-src 'self'">
+  <title>Monad TVL Monitor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="uPlot.min.css">
+</head>
+<body>
+  <header>
+    <h1>Monad TVL Monitor</h1>
+    <div id="last-updated"></div>
+  </header>
+  <main>
+    <div id="status"></div>
+    <section id="chain-chart-section">
+      <h2>Chain TVL</h2>
+      <div id="chain-chart"></div>
+    </section>
+    <section id="dashboard-section">
+      <h2>Protocol Dashboard</h2>
+      <div id="dashboard"></div>
+    </section>
+    <section id="protocol-charts-section">
+      <h2>Protocol TVL Charts</h2>
+      <div id="protocol-charts"></div>
+    </section>
+  </main>
+  <noscript>
+    <p>This application requires JavaScript to display TVL data.</p>
+  </noscript>
+  <script src="uPlot.iife.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
