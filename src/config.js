@@ -11,7 +11,7 @@ var config = {
 
   // Fetch safety limits
   FETCH_TIMEOUT_MS: 10000,
-  FETCH_MAX_BODY_BYTES: 10 * 1024 * 1024, // 10MB
+  FETCH_MAX_BODY_BYTES: 20 * 1024 * 1024, // 20MB
   FETCH_MAX_RETRIES: 3,
 
   // Validation bounds
