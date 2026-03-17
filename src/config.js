@@ -6,8 +6,8 @@ var config = {
   // DefiLlama API base URL - the ONLY allowed origin for fetches
   API_BASE: 'https://api.llama.fi',
 
-  // Refresh interval in milliseconds (5 minutes)
-  REFRESH_INTERVAL_MS: 5 * 60 * 1000,
+  // Refresh interval in milliseconds (60 seconds)
+  REFRESH_INTERVAL_MS: 60 * 1000,
 
   // Fetch safety limits
   FETCH_TIMEOUT_MS: 10000,
