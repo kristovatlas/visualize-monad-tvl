@@ -35,7 +35,7 @@ function renderDashboard(container, protocols, protocolHistories) {
       dom.el('th', {}, ['1h']),
       dom.el('th', {}, ['24h']),
       dom.el('th', {}, ['7d']),
-      dom.el('th', {}, ['Anomaly']),
+      dom.el('th', { title: 'Z-score: how unusual is today\'s change vs. the last 30 days' }, ['Anomaly']),
       dom.el('th', {}, ['Trend'])
     ])
   ]);
@@ -49,6 +49,17 @@ function renderDashboard(container, protocols, protocolHistories) {
   }
   table.appendChild(tbody);
   container.appendChild(table);
+
+  // Anomaly score legend
+  container.appendChild(dom.el('div', { 'class': 'anomaly-legend' }, [
+    dom.el('strong', {}, ['Anomaly score']),
+    ' \u2014 How unusual is today\u2019s TVL change compared to the last 30 days of daily moves. ',
+    dom.el('span', { 'class': 'anomaly-legend-normal' }, ['< 2.0 normal']),
+    ' \u00B7 ',
+    dom.el('span', { 'class': 'anomaly-legend-warning' }, ['\u2265 2.0 unusual']),
+    ' \u00B7 ',
+    dom.el('span', { 'class': 'anomaly-legend-critical' }, ['\u2265 3.0 investigate'])
+  ]));
 }
 
 // Create a single protocol table row

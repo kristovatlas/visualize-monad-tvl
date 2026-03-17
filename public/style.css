@@ -211,6 +211,27 @@ h2 {
   width: 90px;
 }
 
+/* Anomaly legend */
+.anomaly-legend {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  padding: 0.5rem 0.75rem;
+}
+
+.anomaly-legend-normal {
+  color: var(--color-text-muted);
+}
+
+.anomaly-legend-warning {
+  color: var(--color-warning);
+  font-weight: 600;
+}
+
+.anomaly-legend-critical {
+  color: var(--color-critical);
+  font-weight: 700;
+}
+
 /* Chart sections */
 section {
   margin-bottom: 2rem;
